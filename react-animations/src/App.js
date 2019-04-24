@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Spring } from "react-spring";
+import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Spring
+      from={{ opacity: 0.6, marginTop: -50 }}
+      to={{ opacity: 1, marginTop: 50 }}
+    >
+      {props => (
+        <div style={props} className="App">
+          <article className="post">
+            <h1>My first posts</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate rerum reprehenderit consectetur porro similique
+              reiciendis ex consequuntur tempore! Similique, pariatur
+              harum.Facilis, accusantium quam labore incidunt soluta
+              suscipit ipsa omnis.
+            </p>
+          </article>
+        </div>
+      )}
+    </Spring>
   );
 }
 
