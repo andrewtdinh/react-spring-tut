@@ -1,6 +1,6 @@
 import React from "react";
-import { Spring } from "react-spring";
-import "./styles.css";
+import { Spring } from "react-spring/renderprops";
+import "./App.css";
 
 function App() {
   return (
