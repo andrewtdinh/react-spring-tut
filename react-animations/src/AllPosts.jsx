@@ -14,8 +14,8 @@ function AllPosts() {
     <Trail
       items={posts}
       keys={post => post.id}
-      from={{ marginLeft: -20, opacity: 0 }}
-      to={{ marginLeft: 20, opacity: 1 }}
+      from={{ marginLeft: -360, opacity: 0.4 }}
+      to={{ marginLeft: 50, opacity: 1 }}
     >
       {post => props => (
         <div style={props} className="post">
