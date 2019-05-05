@@ -1,6 +1,6 @@
 import React from "react";
 import { Spring, config } from "react-spring";
-import "./styles.css";
+import "./App.css";
 
 function NavBar() {
   return (
