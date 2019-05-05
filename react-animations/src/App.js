@@ -1,13 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import FirstPost from './FirstPost';  
+import FirstPost from './FirstPost';
+import AllPosts from './AllPosts';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <FirstPost />
+        <AllPosts />
       </header>
     </div>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Trail } from "react-spring";
+import { Trail } from "react-spring/renderprops";
 import "./styles.css";
 
 const posts = [
