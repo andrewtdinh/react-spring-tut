@@ -1,5 +1,5 @@
 import React from "react";
-import { Spring, config } from "react-spring";
+import { Spring, config } from "react-spring/renderprops";
 import "./App.css";
 
 function NavBar() {
