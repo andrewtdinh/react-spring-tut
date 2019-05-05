@@ -1,6 +1,6 @@
 import React from "react";
 import { Trail } from "react-spring/renderprops";
-import "./styles.css";
+import "./App.css";
 
 const posts = [
   { title: "My first post", id: 1 },
