@@ -5,7 +5,7 @@ import "./App.css";
 function FirstPost() {
   return (
     <Spring
-      from={{ opacity: 0.4, marginTop: -100 }}
+      from={{ opacity: 0.2, marginTop: -100 }}
       to={{ opacity: 1, marginTop: 100 }}
     >
       {props => (
