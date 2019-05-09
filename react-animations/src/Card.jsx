@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { useSpring, animated } from 'react-spring'
 import './styles.css'
 
@@ -18,4 +17,3 @@ function Card() {
   )
 }
 
-ReactDOM.render(<Card />, document.getElementById('root'))
