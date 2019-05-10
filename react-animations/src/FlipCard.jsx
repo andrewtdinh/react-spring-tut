@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useSpring, animated as a } from 'react-spring'
-import './styles.css'
+import './FlipCard.css'
 
 export default function FlipCard() {
   const [flipped, set] = useState(false)
