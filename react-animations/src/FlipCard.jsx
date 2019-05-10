@@ -1,9 +1,8 @@
-import { render } from 'react-dom'
 import React, { useState } from 'react'
 import { useSpring, animated as a } from 'react-spring'
 import './styles.css'
 
-function Card() {
+export default function FlipCard() {
   const [flipped, set] = useState(false)
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
@@ -17,5 +16,3 @@ function Card() {
     </div>
   )
 }
-
-render(<Card />, document.getElementById('root'))
