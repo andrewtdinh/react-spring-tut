@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import FlipCard from './FlipCard';
+import Slider from './Slider';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <FlipCard />
+        <Slider />
       </header>
     </div>
   );
