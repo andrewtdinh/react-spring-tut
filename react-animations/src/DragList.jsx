@@ -14,7 +14,7 @@ const fn = (order, down, originalIndex, curIndex, y) => index =>
     ? { y: curIndex * 100 + y, scale: 1.1, zIndex: '1', shadow: 15, immediate: n => n === 'y' || n === 'zIndex' }
     : { y: order.indexOf(index) * 100, scale: 1, zIndex: '0', shadow: 1, immediate: false }
 
-function DraggableList({ items }) {
+export default function DraggableList({ items }) {
   const order = useRef(items.map((_, index) => index)) // Store indicies as a local ref, this represents the item order
   const [springs, setSprings] = useSprings(items.length, fn(order.current)) // Create springs, each corresponds to an item, controlling its transform, scale, etc.
   const bind = useGesture(({ args: [originalIndex], down, delta: [, y] }) => {
@@ -41,5 +41,3 @@ function DraggableList({ items }) {
     </div>
   )
 }
-
-render(<DraggableList items={'Lorem ipsum dolor sit'.split(' ')} />, document.getElementById('root'))
