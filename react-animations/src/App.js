@@ -1,11 +1,11 @@
 import React from 'react';
-import Slider from './Slider';
+import DragList from './DragList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Slider children="Slide" />
+        <DragList />
       </header>
     </div>
   );
