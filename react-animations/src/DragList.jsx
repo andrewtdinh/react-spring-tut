@@ -6,7 +6,7 @@ import clamp from 'lodash-es/clamp'
 import swap from 'lodash-move'
 import { useGesture } from 'react-use-gesture'
 import { useSprings, animated, interpolate } from 'react-spring'
-import './styles.css'
+import './DragList.css'
 
 // Returns fitting styles for dragged/idle items
 const fn = (order, down, originalIndex, curIndex, y) => index =>
