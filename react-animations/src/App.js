@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <DragList items={ 'Lorem ipsum dolor sit'.split(' ') } />/>
+        <DragList items={ 'Lorem ipsum dolor sit'.split(' ') } />
       </header>
     </div>
   );
