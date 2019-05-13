@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { useSpring, animated } from 'react-spring'
 import './styles.css' // // Icons made by Freepik from www.flaticon.com
 
@@ -9,7 +8,7 @@ const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`
 const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`
 const trans4 = (x, y) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`
 
-function Card() {
+export default function Parallax() {
   const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }))
   return (
     <div class="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
@@ -20,5 +19,3 @@ function Card() {
     </div>
   )
 }
-
-ReactDOM.render(<Card />, document.getElementById('root'))
