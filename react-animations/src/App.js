@@ -1,11 +1,11 @@
 import React from 'react';
-import DragList from './DragList';
+import Parallax from './Parallax';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <DragList items={ 'Lorem ipsum dolor sit'.split(' ') } />
+        <Parallax />
       </header>
     </div>
   );
