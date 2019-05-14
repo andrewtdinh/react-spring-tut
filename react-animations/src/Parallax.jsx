@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
-import './styles.css' // // Icons made by Freepik from www.flaticon.com
+import './Parallax.css' // // Icons made by Freepik from www.flaticon.com
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`
