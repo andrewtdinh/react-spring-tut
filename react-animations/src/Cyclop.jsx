@@ -1,7 +1,8 @@
+// Copied from https://codesandbox.io/embed/py912w5k6m
 import React, { useCallback } from 'react'
 import { useSpring, animated as a, interpolate } from 'react-spring'
 import lorem from 'lorem-ipsum'
-import './styles.css' // Icon made by Freepik from www.flaticon.com
+import './Cyclop.css' // Icon made by Freepik from www.flaticon.com
 
 export default function Cyclop() {
   const [{ st, xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }))
