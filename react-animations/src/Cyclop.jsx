@@ -1,10 +1,9 @@
 import React, { useCallback } from 'react'
-import ReactDOM from 'react-dom'
 import { useSpring, animated as a, interpolate } from 'react-spring'
 import lorem from 'lorem-ipsum'
 import './styles.css' // Icon made by Freepik from www.flaticon.com
 
-function App() {
+export default function Cyclop() {
   const [{ st, xy }, set] = useSpring(() => ({ st: 0, xy: [0, 0] }))
   const interpBg = xy.interpolate((x, y) => `perspective(400px) rotateY(${x / 60}deg) rotateX(${-y / 60}deg) translate3d(-50%, -50%, 0)`)
   const interpFace = st.interpolate(o => `translate(90,${105 + o / 4})`)
@@ -72,5 +71,3 @@ function App() {
     </div>
   )
 }
-
-ReactDOM.render(<App />, document.getElementById('root'))
