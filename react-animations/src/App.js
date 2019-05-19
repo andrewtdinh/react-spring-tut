@@ -1,11 +1,11 @@
 import React from 'react';
-import Parallax from './Parallax';
+import Cyclop from './Cyclop';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Parallax />
+        <Cyclop />
       </header>
     </div>
   );
