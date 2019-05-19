@@ -1,5 +1,4 @@
 // Copied from https://codesandbox.io/embed/j0y0vpz59
-import { render } from "react-dom";
 import React, { useState } from "react";
 import { useSprings, animated, interpolate } from "react-spring";
 import { useGesture } from "react-use-gesture";
@@ -28,7 +27,7 @@ const trans = (r, s) =>
   `perspective(1500px) rotateX(30deg) rotateY(${r /
     10}deg) rotateZ(${r}deg) scale(${s})`;
 
-function Deck() {
+export default function Deck() {
   const [gone] = useState(() => new Set()); // The set flags all the cards that are flicked out
   const [props, set] = useSprings(cards.length, i => ({
     ...to(i),
@@ -84,5 +83,3 @@ function Deck() {
     </animated.div>
   ));
 }
-
-render(<Deck />, document.getElementById("root"));
