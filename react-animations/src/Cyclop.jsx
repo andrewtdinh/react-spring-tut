@@ -1,7 +1,7 @@
 // Copied from https://codesandbox.io/embed/py912w5k6m
 import React, { useCallback } from 'react'
 import { useSpring, animated as a, interpolate } from 'react-spring'
-import lorem from 'lorem-ipsum'
+import { loremIpsum } from 'lorem-ipsum'
 import './Cyclop.css' // Icon made by Freepik from www.flaticon.com
 
 export default function Cyclop() {
@@ -18,7 +18,7 @@ export default function Cyclop() {
   const onScroll = useCallback(e => set({ st: e.target.scrollTop / 30 }), [])
   return (
     <div class="container" onMouseMove={onMove} onScroll={onScroll}>
-      <div style={{ height: '700%', overflow: 'hidden' }}>{lorem({ count: 200 })}</div>
+      <div style={{ height: '700%', overflow: 'hidden' }}>{loremIpsum({ count: 200 })}</div>
       <a.svg style={{ transform: interpBg }} viewBox="0 0 490 512">
         <g id="bg">
           <path d="M490,267 C490,402.308594 380.308594,512 245,512 C109.691406,512 0,402.308594 0,267 C0,131.691406 109.691406,22 245,22 C380.308594,22 490,131.691406 490,267 Z" />
