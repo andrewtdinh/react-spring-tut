@@ -6,6 +6,7 @@
     "react-scripts": "3.0.0"
   },
   "dependencies": {
+    "lorem-ipsum": "^2.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-spring": "^8.0.19"
