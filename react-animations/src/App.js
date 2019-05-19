@@ -1,11 +1,11 @@
 import React from 'react';
-import Cyclop from './Cyclop';
+import Deck from './CardStack';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Cyclop />
+        <Deck />
       </header>
     </div>
   );
