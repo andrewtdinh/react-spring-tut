@@ -13,7 +13,12 @@ const createImage = image => ({
 
 export const App = () => {
   // Hold images
-
+  const [cards] = useState([
+    createImage(image1),
+    createImage(image2),
+    createImage(image3)
+  ]);
+  
   return (
     <div className="App">
       {/* Loop over images and display a card for each */}
