@@ -4,13 +4,22 @@ import logo from './logo.svg';
 import './App.css';
 
 const App = () => {
+  const fade = useSpring({
+    from: {
+      opacity: 0
+    },
+    to: {
+      opacity: 1
+    }
+  })
+
   return (
-    <div className="App">
+    <animated.div className="App" style={fade} >
       <header className="App-header">
         <img src={logo} className="logo" />
         <button className="menu-button">Menu</button>
       </header>
-    </div>
+    </animated.div>
   );
 }
 
