@@ -1,11 +1,11 @@
 import React from 'react';
-import Deck from './CardStack';
+import Parallax from './Parallax';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Deck />
+        <Parallax />
       </header>
     </div>
   );
