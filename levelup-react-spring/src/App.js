@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
-import Toggle from './Toggle';
+// import Toggle from './Toggle';
+import Blob from './Blob';
 import logo from './logo.svg';
 import './App.css';
 
@@ -19,7 +20,7 @@ const App = () => {
         <button className="menu-button">Menu</button>
       </header>
       <main>
-        <Toggle />
+        <Blob />
       </main>
     </animated.div>
   );
