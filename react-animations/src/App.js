@@ -1,12 +1,11 @@
 import React from 'react';
-// import Parallax from './Parallax';
-import Goo from './Blob';
+import Parallax from './Parallax';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Goo />
+        <Parallax />
       </header>
     </div>
   );
