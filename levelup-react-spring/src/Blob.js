@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 
+const fast = { tension: 1200, friction: 40 }
+const slow = { mass: 10, tension: 200, friction: 50 }
+const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`
 export default function Goo() {
-  const [{ pos1 }, set] = useSpring({ pos1: [0, 0], config: 'fast' });
-  const [{ pos2 }] = useSpring({ pos2: pos1, config: 'slow' });
-  const [{ pos3 }] = useSpring({ pos3: pos2, config: 'slow' });
-  const trans = (x, y) => `translate3d(${x}px, ${y}px, 0) translate3d(-50%, -50%, 0)`
+  const [{ pos1 }, set] = useSpring({ pos1: [0, 0], config: fast });
+  const [{ pos2 }] = useSpring({ pos2: pos1, config: slow });
+  const [{ pos3 }] = useSpring({ pos3: pos2, config: slow });
 
   useEffect(() => {
     const handler = ({ clientX, clientY }) => set({ pos1: [clientX, clientY] });
